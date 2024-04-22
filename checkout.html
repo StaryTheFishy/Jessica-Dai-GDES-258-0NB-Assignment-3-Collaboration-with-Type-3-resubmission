@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Technology 4 - Assignment 3 - Checkout</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="./css/stylesheet.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div id="header-icons">
+                    <a href="index.html"><img src="images/Artboard2_3.png" alt="image unavailable"></a>
+                </div>
+                <div id="header-logo">
+                    <a href="index.html"><img src="images/Artboard5.png" alt="image unavailable"></a>
+                </div>
+            </nav>
+        </header>
+        <section id="checkout-section">
+            <div class="form">
+                <div class="credit">
+                    <form>
+                        <input type="radio" id="credit" name="credit_or_paypal" value="credit">
+                        <label for="credit">Credit/Debit Card</label><br>
+
+                        <label for="card-number">Card Number*</label><br>
+                        <input type="text" id="card-number" name="card-number"><br>
+
+                        <div class="flexbox-title">
+
+                            <div>
+                                <label for="expiry-date">Expiry Date*</label><br>
+                                <input type="text" id="expiry-date" name="expiry-date"><br>
+                            </div>
+
+                            <div>
+                                <label for="cvc-cvv">CVC/CVV*</label><br>
+                                <input type="text" id="cvc-cvv" name="cvc-cvv"><br>
+                            </div>
+                        </div>
+
+                        <label for="card-name">Name on Card*</label><br>
+                        <input type="text" id="card-name" name="card-name"><br>
+
+                        <h2>Your Billing Address</h2>
+
+                        <p>Title*</p>
+
+                        <div class="flexbox-title">
+                            <div>
+                                <input type="radio" id="title-1" name="ms" value="title">
+                                <label for="title-1">Ms</label><br>
+
+                                <input type="radio" id="title-2" name="mrs" value="title">
+                                <label for="title-2">Mrs</label><br>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="title-3" name="miss" value="title">
+                                <label for="title-3">Miss</label><br>
+
+                                <input type="radio" id="title-4" name="mr" value="title">
+                                <label for="title-4">Mr</label><br>
+                            </div>
+                        </div>
+
+                        <div class="flexbox-title">
+
+                            <div>
+                                <label for="first-name">First Name*</label><br>
+                                <input type="text" id="first-name" name="first-name"><br>
+                            </div>
+
+                            <div>
+                                <label for="last-name">Last Name*</label><br>
+                                <input type="text" id="last-name" name="last-name"><br>
+                            </div>
+                        </div>
+
+                        <label for="phone-number">Phone Number*</label><br>
+                        <input type="text" id="phone-number" name="phone-number"><br>
+
+                        <label for="address-one">Address Line 1*</label><br>
+                        <input type="text" id="address-one" name="address-one"><br>
+
+                        <label for="address-two">Address Line 2*</label><br>
+                        <input type="text" id="address-two" name="address-two"><br>
+
+                        <div class="flexbox-title">
+                            <div >
+                                <label for="municipality">Municipality*</label><br>
+                                <input type="text" id="municipality" name="municipality"><br>
+
+                                <label for="postcode">Postcode*</label><br>
+                                <input type="text" id="postcode" name="postcode"><br>
+                            </div>
+
+                            <div>
+                                <label for="province">Province*</label><br>
+                                <input type="text" id="province" name="province"><br>
+    
+                                <label for="country">Country*</label><br>
+                                <input type="text" id="country" name="country"><br>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="paypal">
+                    <form>
+                        <input type="radio" id="paypal" name="credit_or_paypal" value="paypal">
+                        <label for="credit">Paypal</label><br>
+                    </form>
+                </div>
+
+                <hr>
+
+                <h2>Order Updates</h2>
+                <p>We will send an email with your receipt and order details to:
+                    Example@email.com
+                </p>
+
+                <hr>
+
+                <h2>Review Your Order (1 Item)</h2>
+                <p>Your shipping address</p>
+
+                <p>Yorkdale Toronto
+                    
+                <p>3401 Dufferin Street</p>
+                    
+                <p>Toronto</p>
+                    
+                <p>Ontario</p>
+                    
+                <p>M6A 2T9</p>
+                    
+                <p>Canada</p>
+                    
+                <p>+1 416 789 9901</p>
+
+                <hr>
+
+                <div id="item">
+
+                </div>
+                <div>
+                    <p>Quantity: 1</p>
+                </div>
+
+                <hr>
+
+                <h2>Subtotal</h2>
+                <p>Collect in Store</p>
+
+                <p>Sales Tax</p>
+
+                <form class="checkmarks">
+                    <input type="checkbox" id="order" name="orders" value="orders">
+                    <label for="order">All orders will be fulfilled by Burberry Limited and shipped from the UK and are subject to your Terms and Conditions.
+                        Please tick to indicate that you agree to our Terms and Conditions and have read our Privacy Policy. </label><br>
+
+                    <input type="checkbox" id="information" name="information" value="information">
+                    <label for="information"> From new season arrivals to runaway shows, get the latest news about Burberry products, services and events with Burberry email updates, You may opt out at any time by using the unsubscribe link in the emails, You provide your
+                        Personal information voluntarily and Burberry can only send you updates with your consent. View our Privacy Policy.</label><br>
+                </form>
+
+                <h1>Delivery</h1>
+                <hr>
+                <h2>Choose your shipping method</h2>
+                <form>
+                    <input type="radio" id="home" name="home_delivery" value="home">
+                    <label for="credit">Home Delivery</label><br>
+
+                    <input type="radio" id="store" name="collect_in_store" value="store">
+                    <label for="credit">Collect In Store</label><br>
+
+                    <hr>
+                    <h2>Where would you like to collect your order?</h2>
+                    <label for="city">Select a city*</label><br>
+                    <input type="text" id="city" name="city"><br>
+
+                    <hr>
+                    <h2>Estimated Collection Date: May 14th 2024</h2>
+                    <input type="radio" id="bloor" name="torontos" value="bloor">
+                    <label for="credit">Bloor Street Toronto</label><br>
+                    <input type="radio" id="yorkdale" name="torontos" value="yorkdale">
+                    <label for="credit">Yorkdale Toronto</label><br>
+                    <input type="radio" id="hr-yorkdale" name="torontos" value="hr-yorkdale">
+                    <label for="credit">HR Yorkdale Toronto</label><br>
+                    <input type="radio" id="hr-bloor" name="torontos" value="hr-bloor">
+                    <label for="credit">HR Bloor Street Toronto</label><br>
+
+                    <hr>
+                    <h2>Is your Delivery a gift?</h2>
+                    <input type="checkbox" id="gift" name="gift" value="gift">
+                    <label for="gift"> Add Complimentary Gift Packaging</label><br>
+
+                    <button>Confirm & Pay</button>
+
+                </form>
+            </div>
+
+            <div class="details">
+                <div>
+                    <h2>Checkout (1 item)</h2>
+                    <p>Edit Bag</p>
+
+                    <h2>Subtotal</h2>
+                    <p>CAD 3290.00</p>
+
+                    <h2>Estimated Shipping</h2>
+                    <p>Free</p>
+
+                    <h2>Sales Tax</h2>
+                    <p>CAD 147.28</p>
+
+                    <hr>
+
+                    <h2>Total</h2>
+                    <p>CAD 3437.28</p>
+
+                </div>
+            </div>
+
+        </section>
+        <footer>
+
+            <hr>
+            <div>
+                <h2>Help With Your Order</h2>
+                <p>+1 877 780 9347
+                    customerservice@burberry.com</p>
+
+            </div>
+
+            <h2>Burberry Accepts</h2>
+            <div id="accepts">
+                <img src="images/visa.png" alt="image unavailable">
+                <img src="images/mc.png" alt="image unavailable">
+                <img src="images/amex.png" alt="image unavailable">
+                <img src="images/paypal.png" alt="image unavailable">
+                
+            </div>
+            <div>
+                <h2>Secure Shopping</h2>
+                <p>Your security is important to us. For full details of how we protect
+                    your payment and personal details, please read our Privacy Statement.</p>
+                
+            </div>
+
+        </footer>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <script src="./js/checkout.js"></script>
+</html>
